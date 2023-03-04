@@ -1,0 +1,442 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta author="Michal H. Kolář">
+
+	<title>
+        Atomistic computer simulations of the ribosome
+    </title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/white.mhk.css" id="theme">
+
+</head>
+	<body>
+        <div class="reveal">
+	        <div class="slides">
+<!--
+============ SLIDES START HERE ============
+-->
+
+
+<section>
+    <p>
+        Invited seminar at the Department of Biology and Ecology of the Faculty of Science, University of Ostrava, Czech Republic.
+    </p>
+    <p>
+        Created using <a href="https://revealjs.com" target="_blank">Reveal.js</a>.
+    </p>
+    <p style="margin-top: 2em">
+        Use right arrow for browsing.
+    </p>
+</section>
+
+
+
+
+<section style="text-align: left">
+    <h2 style="margin-top:1em">
+        Atomistic computer simulations of the ribosome
+    </h2>
+    <div class="leftcol" style="width:48%">
+        <h3 style="margin-top: 2em; margin-bottom: 2em">Michal H. Kolář</h3>
+        <p>
+            <img src="./media/logos/twitter.png" style="width:40px; margin: 0px 15px -5px 0px; display: inline; clear: none">@MhkoScience
+        </p>
+        <p>
+            <img src="./media/logos/email.png" style="width:40px; margin: 0px 15px -5px 0px; display: inline; clear: none">michal@mhko.science
+        </p>
+    </div>
+    <div class="rightcol" style="width:50%">
+        <video width="100%" nocontrols autoplay loop style="margin-top:-3em">
+          <source data-src="./media/ribosome.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+
+<section>
+    <div class="leftcol" style="width: 72%">
+        <img src="./media/team.jpg"><br>
+        <img src="./media/logos/vscht.png" style="height: 50px; margin-bottom: 5; margin-top: 0"><br>
+        <img src="./media/logos/gacr.png" style="height: 70px; margin-bottom: 5; margin-top: 0">
+            <span style="padding-left: 2em; position: relative; bottom: 1.5em; font-size:smaller">19-06479Y, 23-05557S, 23-05764S</span><br>
+        <img src="./media/logos/it4i.png" style="height: 50px; margin-bottom: 5; margin-top: 0"><br>
+        <img src="./media/logos/czexpats.png" style="height: 90px; margin-top: 0"><br>
+    </div>
+    <div class="rightcol" style="width: 27%; font-size: smaller">
+        <p>
+            Felipe C. Nepomuceno<br>
+            <b>Michaela Černeková</b><br>
+            <b>Hugo McGrath</b><br>
+            Tereza Svatoňová<br>
+            Iva Švecová<br>
+        </p>
+        <p>
+            Josef Cikhart<br>
+            Aneta Hrádková<br>
+            Petr Chalupský<br>
+            Jan Kejla<br>
+            Aneta Leskourová<br>
+            Petr Linhart<br>
+            Martin Mašek<br>
+            Jan Michna<br>
+            Arian Adam Ott<br>
+        </p>
+    </div>
+</section>
+
+
+<section>
+    <div style="width:70%; margin: 5em auto; text-align: left">
+        <h3>1. Atomistic simulations</h3>
+        <h3>2. Ribosome essentials</h3>
+        <h3>3. Stalling by VemP</h3>
+        <h3>4. Long-range allostery</h3>
+    </div>
+</section>
+
+
+<section>
+    <div style="width:70%; margin: 5em auto; text-align: left">
+        <h3>1. Atomistic simulations</h3>
+        <h3 style="color:silver">2. Ribosome essentials</h3>
+        <h3 style="color:silver">3. Stalling by VemP</h3>
+        <h3 style="color:silver">4. Long-range allostery</h3>
+    </div>
+</section>
+
+
+<section>
+    <div class="leftcol">
+        <img src="media/bohr.jpg">
+    </div>
+    <div class="rightcol">
+        <h2 style="margin-top:3em">&bdquo;Prediction is very difficult, especially if it’s about the future.&ldquo;</h2>
+    </div>
+</section>
+
+
+<section>
+    <p style="margin-top:4em">whiteboard section</p>
+</section>
+
+
+<section data-background-image="./media/simulations.png"
+         data-background-size="contain">
+</section>
+
+
+<section>
+    <div style="width:70%; margin: 5em auto; text-align: left">
+        <h3 style="color:silver">1. Atomistic simulations</h3>
+        <h3>2. Ribosome essentials</h3>
+        <h3 style="color:silver">3. Stalling by VemP</h3>
+        <h3 style="color:silver">4. Long-range allostery</h3>
+    </div>
+</section>
+
+
+<section>
+    <p style="margin-top:4em">VMD section</p>
+</section>
+
+
+
+<section>
+    <div style="width:70%; margin: 5em auto; text-align: left">
+        <h3 style="color:silver">1. Atomistic simulations</h3>
+        <h3 style="color:silver">2. Ribosome essentials</h3>
+        <h3>3. Stalling by VemP</h3>
+        <h3 style="color:silver">4. Long-range allostery</h3>
+    </div>
+</section>
+
+
+<section style="text-aling: left">
+    <div class="leftcol" style="width: 72%">
+        <img src="./media/mpinat.jpg"><br>
+        <img src="./media/logos/mpinat.png" style="height: 70px; margin-bottom: 10; margin-top: 10"><br>
+        <img src="./media/logos/mpcdf.png" style="height: 50px; margin-bottom: 10; margin-top: 10">
+        <img src="./media/logos/asu.png" style="height: 70px; margin-bottom: 10; margin-top: 10">
+    </div>
+    <div class="rightcol" style="width: 27%; font-size: smaller">
+        <p>
+            Helmut Grubmüller<br>
+            Lars V. Bock<br>
+            Gabor Nagy<br>
+        </p>
+        <p>
+            Sara M. Vaiana<br>
+            John Kunkel</br>
+        </p>
+        <h4 style="margin-top:2em">Published</h4>
+        <p>
+            Bock <i>et al.</i> <a href="https://pubmed.ncbi.nlm.nih.gov/29202442" target="_blank">PMID: 29202442</a><br>
+        </p>
+        <p>
+            Kolář <i>et al.</i> <a href="https://pubmed.ncbi.nlm.nih.gov/35150281" target="_blank">PMID: 35150281</a><br>
+        </p>
+    </div>
+</section>
+
+
+<section data-background="black" data-background-image="./media/vibrio.jpg" data-background-size="cover">
+  <h2 style="margin-bottom:7em">Vibrio alginolyticus</h2>
+  <h3>Vibrio Export Monitoring Polypeptide (VemP)</h3>
+  <p>&nbsp;</p>
+  photo courtesy: Dr. Gary Gaugler, Visuals Unlimited, Inc.
+</section>
+
+
+<section style="margin-top: 0px; padding: 0px;">
+  <div style="display: block; margin: auto; width:50%;">
+  <span style="font-size: 16pt">Ishii <i>et al.</i>, <a href="https://pubmed.ncbi.nlm.nih.gov/26392525/" target="_blank">PMID: 26392525</a>
+  <div style="position: relative; height: 650px;">
+    <img src="./media/salinity/salinity.1.png" class="fragment-img">
+    <img src="./media/salinity/salinity.2.png" class="fragment-img fragment">
+    <img src="./media/salinity/salinity.3.png" class="fragment-img fragment">
+    <img src="./media/salinity/salinity.4.png" class="fragment-img fragment">
+    <img src="./media/salinity/salinity.5.png" class="fragment-img fragment">
+  </div>
+  </div>
+</section>
+
+<section>
+  <div class="leftcol" style="position: relative; height: 600px; text-align: center">
+    <img src="./media/vemp.png" class="fragment-img">
+  </div>
+  <div class="rightcol">
+  <h2 style="text-align:center">VemP</h2>
+    <ul>
+      <li>cryo-EM shows extreme compation in the exit tunnel</li>
+      <li>Su <i>et al.</i>, <a href="https://pubmed.ncbi.nlm.nih.gov/28556777/" target="_blank">PMID: 28556777</a>
+    </ul>
+    <p>&nbsp;</p>
+    <ul>
+      <li>inner helix inactivates two nucleobases needed for peptidyl transfer</li>
+    </ul>
+  </div>
+</section>
+
+
+<section style="text-align: left">
+  <h2>VemP Questions</h2>
+  <ul>
+    <li>Why does VemP fold in the tunnel?</li>
+    <li>How does VemP respond to external force?</li>
+  </ul>
+  <div class="fragment" style="margin-top: 3em">
+      <h2>Answers</h2>
+      <ul>
+        <li>The tunnel walls play a decisive role in folding VemP.</li>
+        <li>VemP unfolds sequentially from the N-terminus.</li>
+      </ul>
+    </div>
+</section>
+
+
+<section>
+    <img src="./media/vemp-cd.png">
+</section>
+
+
+<section>
+    <img src="./media/vemp-anchor-struct.png">
+</section>
+
+
+<section>
+    <img src="./media/vemp-anchor-plots.png">
+</section>
+
+
+<section>
+    <img src="./media/vemp-model/model.png">
+</section>
+
+
+<section style="font-size: smaller">
+  <video width=850" id="videoPulling" nocontrols loop noautoplay>
+    <source src="./media/pull.100.mp4" type="video/mp4">
+  </video><br>
+  <div class="fragment" id="playPulling">
+  </div>
+  <div class="fragment" id="stopPulling">
+  </div>
+  <script>
+    var pullingVideo = document.getElementById("videoPulling");
+
+    Reveal.addEventListener("fragmentshown", function(e) {
+      if (e.fragment.id == "playPulling") {
+        pullingVideo.play()
+      };
+      if (e.fragment.id == "stopPulling") {
+        pullingVideo.pause()
+      };
+    }, false );
+    Reveal.addEventListener("fragmenthidden", function(e) {
+      if (e.fragment.id == "playPulling") {
+        pullingVideo.load()
+      };
+      if (e.fragment.id == "stopPulling") {
+        pullingVideo.play()
+      };
+    }, false );
+
+  </script>
+</section>
+
+
+
+<section>
+    <div style="width:70%; margin: 5em auto; text-align: left">
+        <h3 style="color:silver">1. Atomistic simulations</h3>
+        <h3 style="color:silver">2. Ribosome essentials</h3>
+        <h3 style="color:silver">3. Stalling by VemP</h3>
+        <h3>4. Long-range allostery</h3>
+    </div>
+</section>
+
+
+<section>
+    <div class="r-stack">
+        <img src="./media/tunnel/tunnel-1.png" style="width:70%">
+        <img src="./media/tunnel/tunnel-2.png" style="width:70%" class="fragment">
+        <img src="./media/tunnel/tunnel-3.png" style="width:70%" class="fragment">
+        <img src="./media/tunnel/tunnel-4.png" style="width:70%" class="fragment">
+        <img src="./media/tunnel/tunnel-5.png" style="width:70%" class="fragment">
+    </div>
+</section>
+
+
+<section data-background-video="./media/pdf.mp4"
+         data-background-video-loop="true"
+         data-background-color="black"
+         data-background-size="contain">
+    &nbsp;
+</section>
+
+
+
+<section style="text-align: left">
+    <div style="margin-top: 3em">
+        <h3>Strategy</h3>
+        <ol>
+            <li>Build systems with and without PDF.</li>
+            <li>Using MD simulations generate conformational ensembles.</li>
+            <li>Analyze structure and dynamics and search for differences caused by PDF.</li>
+        </ol>
+        <h3 style="margin-top:2em">Published</h3>
+        McGrath <i>et al.</i>, <a href="https://pubmed.ncbi.nlm.nih.gov/36335428/" target="_blank">PMID: 36335428</a>
+    </div>
+</section>
+
+
+<section>
+    <img src="./media/rwRMSD.png" style="margin-top:3em">
+</section>
+
+
+<section>
+    <h4 style="margin-top: 4em">Principal Component Regression</h4>
+    <h2 style="margin-top:1em">A story about stalking a bartender</h2>
+</section>
+
+
+<section>
+    <p style="margin-top:4em">whiteboard section</p>
+</section>
+
+
+<section>
+    <p>
+        Hub, de Groot,
+        <a href="https://pubmed.ncbi.nlm.nih.gov/19714202/" target="_blank">PMID: 19714202</a>
+    </p>
+    <img src="./media/mf-scheme.png" style="width: 50%">
+
+    <p>
+    Aim: Get a statistical model to predict F.
+    </p>
+</section>
+
+
+<section>
+    <img src="./media/mf-ul22tip.png" style="width: 80%">
+</section>
+
+<section data-background-image="./media/pcr.png"
+         data-background-size="contain">
+</section>
+
+
+<section data-background-image="./media/mcm.png"
+         data-background-size="contain">
+</section>
+
+
+
+<section style="text-align: left">
+    <h2 style="margin-top:1em">
+        Atomistic computer simulations of the ribosome
+    </h2>
+    <div class="leftcol" style="width:48%">
+        <h3 style="margin-top: 2em; margin-bottom: 2em">Michal H. Kolář</h3>
+        <p>
+            <img src="./media/logos/twitter.png" style="width:40px; margin: 0px 15px -5px 0px; display: inline; clear: none">@MhkoScience
+        </p>
+        <p>
+            <img src="./media/logos/email.png" style="width:40px; margin: 0px 15px -5px 0px; display: inline; clear: none">michal@mhko.science
+        </p>
+    </div>
+    <div class="rightcol" style="width:50%">
+        <video width="100%" nocontrols autoplay loop style="margin-top:-3em">
+          <source data-src="./media/ribosome.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+
+<section style="text-align: left">
+    <div style="margin-top: 5em">
+        <h2>Technical details</h2>
+        <ul>
+            <li>molecular mechanics, Newton's laws</li>
+            <li>Amber force field, explicit SPC/E water</li>
+            <li>2M particles</li>
+            <li>Gromacs 2020, CPU-only implementation</li>
+            <li>1000 ns/traj, 4 independent trajs/system, 3.3M corehours</li>
+        </ul>
+    </div>
+</section>
+
+
+<!--
+============ SLIDES END HERE ============
+-->
+            </div>
+        </div>
+
+		<script src="dist/reveal.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+                autoPlayMedia: true,
+                controls: false,
+                progress: true, 
+                slideNumber: true,
+                transition: 'none', 
+                backgroundTransition: 'none',
+                center: false,
+			});
+		</script>
+	</body>
+</html>
+        
